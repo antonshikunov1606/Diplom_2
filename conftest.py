@@ -4,7 +4,7 @@ from test_data import urls, tokens
 
 
 @pytest.fixture
-def registration_user(request):  # Добавляем параметр request
+def registration_user(request):
     def _registration_user(payload):
         reg_response = requests.post(urls["registration"], json=payload)
         reg_response_data = reg_response.json()

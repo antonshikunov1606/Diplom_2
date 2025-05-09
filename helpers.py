@@ -22,9 +22,9 @@ def random_name():
 
 
 def random_credentials():
-   credentials = {
-       "email": random_email(),
-       "password": random_password(),
-       "name": random_name()
-   }
-   return credentials
+    credentials = {
+        "email": random_email(),
+        "password": random_password(),
+        "name": random_name()
+    }
+    return credentials

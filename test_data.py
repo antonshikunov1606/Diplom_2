@@ -1,10 +1,12 @@
-URLS = {
-    'registration': "https://stellarburgers.nomoreparties.site/api/auth/register",
-    'login': "https://stellarburgers.nomoreparties.site/api/auth/login",
-    'edit': "https://stellarburgers.nomoreparties.site/api/auth/user",
-    'create_order': "https://stellarburgers.nomoreparties.site/api/orders",
-    'get_order': "https://stellarburgers.nomoreparties.site/api/orders",
-    'delete': "https://stellarburgers.nomoreparties.site/api/auth/user"
+base_url = "https://stellarburgers.nomoreparties.site/api"
+
+urls = {
+    'registration': f"{base_url}/auth/register",
+    'login': f"{base_url}/auth/login",
+    'edit': f"{base_url}/auth/user",
+    'create_order': f"{base_url}/orders",
+    'get_order': f"{base_url}/orders",
+    'delete': f"{base_url}/auth/user"
 }
 
 credentials = {
@@ -13,7 +15,7 @@ credentials = {
     "name": "Anton"
 }
 
-Tokens = {
+tokens = {
     'accessToken': '',
     'refreshToken': ''
 }
